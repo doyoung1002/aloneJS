@@ -1,0 +1,41 @@
+// 문자열 입력 : prompt();
+// 불 입력: confirm();
+
+prompt('메세지', '디폴트값');
+const a = prompt('a', ''); // 디폴트 값 -> 입력 값
+console.log(a); // console.log(a)를 하게 되면 내가 입력한 값이 출력이 된다.
+prompt는 문자열로 받기 때문에 숫자를 입력해도 문자로 인식하게 된다.
+그래서 
+Number() // 숫자로 변환
+String() // 문자로 변환
+Boolean() // 불
+
+# 문자열 -> 숫자
+'123' -> 123
+Number('안녕하세요') -> 숫자! // NaN(Not a Number)
+
+Not a Number -> NaN
+-> typeof(NaN) // 'number'
+
+# 숫자 -> 문자열
+123 -> '123'
+
+# 불 -> 문자열
+String(true) // 'true'
+String(false) // 'false'
+
+# 불 -> 숫자
+Number(true) // 1
+Number(false) // 0
+
+1 -> 켜져있다, 존재한다.
+0 -> 꺼져있다, 존재하지 않는다.
+
+# 다른 자료형 -> 불
+5가지 경우 -> false
+0, NaN, '', null, undefined
+
+이외의 경우 -> true
+
+confirm('메세지'); // 확인 true, 취소 false
+const b = confirm('메세지'); 

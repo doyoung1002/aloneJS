@@ -1,0 +1,37 @@
+변수
+변순에 적용할 수 있는 연산자
+복합 대입 연산자 + 증감 연산자
+
+let a = 100; // undefine
+a // 100
+a += 100 // a = a + 100 복합 대입연산자
+a -= 100 // a = a - 100
+
+복합 대입 연산자
++= -= *= /= %=
+
+주의 할 점
+a = a + 100
+변수에만 적용할 수 있다.
+
+증감 연산자
+// a++ a--
+// 현재 문장을 실행한 후에 a += 1
+let a = 0;
+console.log(a++) // 0 // console.log(a) -> a+= 1
+console.log(a) // 1
+
+// ++a --a
+// 현재 문장을 실행하기 전에 a += 1
+let b = 0;
+console.log(++b) // 1 // b +=1 -> console.log(b)
+console.log(b) // 1
+
+undefine 자료형
+1. 상수와 변수로 선언하지 않은 식별자
+typeof(a) // "undefined"
+
+2. 값이 없는 변수
+let b 
+typeof(b) // "undefined"
+
