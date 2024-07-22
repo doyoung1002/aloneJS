@@ -1,0 +1,17 @@
+const x = Number(prompt('숫자 입력', ''));
+    switch (x) {
+      case 1:
+        alert('입력한 값이 1')
+        break
+      case 2:
+        alert('입력한 값이 2')
+        break
+      case 3:
+        alert('입력한 값이 3')
+        break
+      // break 문장
+      // 현재 switch 구문 또는 반복문을 벗어날 때 사용하는 문장
+      default:
+        alert('입력한 값이 1~3이 아님')
+        break
+    }

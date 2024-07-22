@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p127</title>
+  <script>
+    const input = Number(prompt('달러 단위의 금액을 입력해주세요.'));
+    if (!isNaN(input) && input > 0) {
+      const output = input * 1207;
+      alert(`원화: ${output}`);
+    } else {
+      alert('숫자를 입력해주세요.')
+    }
+
+    // 코드
+    // const input = Number(prompt('달러 단위의 금액을 입력해주세요.'));
+    // if (!isNaN(input) && input > 0) {
+    //   const exchangeRate = 1207; // 환율을 상수로 정의
+    //   const output = input * exchangeRate;
+    //   alert(`원화: ${output.toFixed(2)} 원`);
+    // } else {
+    //   alert('유효한 숫자를 입력해주세요.');
+    // }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
