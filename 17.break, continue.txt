@@ -1,0 +1,19 @@
+break 
+switch 조건문에서 언급했듯이 switch 조건문이나 반복문을 벗어날 때 사용하는 키워이다.
+
+let i = 0;
+while (i < 10) {
+  i++; // 무한 반복함
+  alert(`${i}번째 반복입니다`)
+  break // break를 만나는 순간 반복이 멈춤
+}
+
+continue
+반복문 안의 반복 작업을 멈추고 반복문의 처음으로 돌아가 다시 반복 작업을 진행한다.
+let i = 0;
+while (i < 10) {
+  i++;
+  alert(`${i}번째 반복입니다`)
+  continue
+  console.log(`현재 반복이 끝났다`) 
+}
