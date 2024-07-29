@@ -1,0 +1,37 @@
+API
+-> Application Programming Interface
+-> 애플리케이션 프로그램을 만들때의 약속
+
+나머지 매개변수(rest parameters)
+const 함수 = function (a, b,...매개변수) {
+  console.log(a, b, 매개변수)
+}
+
+const 잘못된 예 = function (...매개 변수, a, b) {
+  이것은 잘못된 예
+}
+
+함수()
+함수(1)
+함수(1, 2)
+함수(1, 2, 3)
+함수(1, 2, 3, 4)
+
+전개 연산자: 함수호출
+const 함수 = function(a, b, c) {
+  console.log(a, b, c)
+}
+
+const a = [1, 2, 3,]
+함수(a[0], a[1], a[2])
+함수(...a)
+
+// 나머지 매개변수
+function (...매개변수) {
+
+}
+// 배열
+
+
+// 전개 연산자
+함수(...배열);

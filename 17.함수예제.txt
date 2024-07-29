@@ -1,0 +1,43 @@
+// 익명 함수
+const f = function(매개변수, 매개변수) {
+  return 리턴 값
+}
+
+// 선언적 함수
+function f(매개변수, 매개변수){
+  return 리턴값
+}
+
+const isLeapYear = function (year) {
+  return (year % 4 === 0) && ( year % 100 !== 0) || (year % 400 === 0);
+}
+
+console.log(`2020년은 윤년일까? === ${isLeapYear(2020)}`); 
+console.log(`2010년은 윤년일까? === ${isLeapYear(2010)}`); 
+console.log(`2000년은 윤년일까? === ${isLeapYear(2000)}`); 
+console.log(`1900년은 윤년일까? === ${isLeapYear(1900)}`); 
+
+const sum = function (a, b) {
+  let output = 0;
+  for(let i = a; i <= b; i++) {
+    output += i
+  }
+  return output;
+}
+
+console.log(sum(1, 10));
+
+최솟값
+const min = function(배열) {
+let output = 배열[0]
+console.log(`처음 실행 때의 output = ${output}`)
+for( const value of 배열) {
+  console.log(`현재 비교 대상 ${output} 과 ${value} 중에 작은 것은?`)
+  if(output > value) {
+    output = value
+  }
+  console.log(`= ${output}`)
+}
+return output
+}
+min([52, 273, 32, 103, 254, 24, 57]);

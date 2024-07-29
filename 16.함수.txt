@@ -1,0 +1,68 @@
+// 프로시저 형태의 함수
+const f = function () {
+  // 점프!
+  console.log('안녕하세요')
+  console.log('안녕하세요')
+  console.log('안녕하세요')
+  // 함수 끝 -> 원래 위치로 돌아감 = 리턴
+}
+
+alert()
+prompt()
+f()
+
+함수()
+-> 함수를 호출!
+= 함수의 본문을 실행
+
+점프 : 호출 위치에서 함수 본문으로 이동하는 것
+리턴 : 함수 본문에서 호출 위치로 나오는 것
+
+// 수학적 함수
+f(x) = x + 5;
+f(1) = 1 + 5 = 6
+f(2) = 2 + 5 = 7
+
+// x는 매개변수 
+const f = function(x = 1) {
+  // 점프
+  return x + 5 // 리턴값
+}
+
+f(1)
+f(2)
+
+console.log(f(1)) // f(1)의 리턴값은 6이다.
+console.log(f(2)) // f(2)의 리턴값은 7이다.
+
+// 코드의 재사용
+
+const sum = function() {
+let output = 0
+for (let i = 1; i <= limit; i++) {
+  output += i
+}
+console.log(output)
+}
+
+let limit = 10
+sum()
+
+limit = 20
+sum()
+
+limit = 30
+sum()
+
+
+const sum = function(limit) {
+let output = 0
+for (let i = 1; i <= limit; i++) {
+  output += i
+}
+return output
+}
+
+console.log(`합은 ${sum(10)}`)
+console.log(`합은 ${sum(20)}`)
+console.log(`합은 ${sum(30)}`)
